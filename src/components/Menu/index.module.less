@@ -1,0 +1,32 @@
+.menuDemo {
+  box-sizing: border-box;
+  width: 100%;
+  :global(.arco-menu-inner) {
+    overflow-y: auto;
+  }
+}
+
+.menuLogo {
+  width: 80px;
+  height: 30px;
+  border-radius: 2px;
+  background: black;
+  cursor: text;
+}
+
+.menuRight{
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  .rightItemStyle{
+    cursor: pointer;
+  }
+}
+
+.demoTriggerPopup {
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  background-color: var(--color-bg-popup);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+}
