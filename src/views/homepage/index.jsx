@@ -1,5 +1,6 @@
 import styles from './index.module.less'
 import CreateProject from './components/CreateProject'
+import UpdateElectron from '@/components/update'
 import { useRef } from 'react'
 export default function homepage () {
   const menuRef = useRef()
@@ -17,6 +18,7 @@ export default function homepage () {
         <div className={styles.rightContent}></div>
       </div>
       <CreateProject mRef={menuRef} update={CreateProject} />
+      <UpdateElectron />
     </>
   )
 }

@@ -6,10 +6,10 @@ import './update.css'
 const Update = () => {
   const [checking, setChecking] = useState(false)
   const [updateAvailable, setUpdateAvailable] = useState(false)
-  const [versionInfo, setVersionInfo] = useState<VersionInfo>()
-  const [updateError, setUpdateError] = useState<ErrorType>()
-  const [progressInfo, setProgressInfo] = useState<Partial<ProgressInfo>>()
-  const [modalOpen, setModalOpen] = useState<boolean>(false)
+  const [versionInfo, setVersionInfo] = useState()
+  const [updateError, setUpdateError] = useState()
+  const [progressInfo, setProgressInfo] = useState()
+  const [modalOpen, setModalOpen] = useState(false)
   const [modalBtn, setModalBtn] = useState({
     onCancel: () => setModalOpen(false),
     onOk: () => window.ipcRenderer.invoke('start-download'),
