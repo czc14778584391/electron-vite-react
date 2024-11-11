@@ -39,6 +39,6 @@
       "provider": "github",
       "owner": "czc14778584391",
       "repo": "electron-vite-react",
-      "releaseType": "draft"
+      "releaseType": "release"
   }
 }

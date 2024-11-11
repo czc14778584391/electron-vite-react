@@ -16,7 +16,7 @@
     "dev": "vite",
     "build": "vite build && electron-builder",
     "preview": "vite preview",
-    "release":"vite build && electron-builder",
+    "release":"vite build && electron-builder --publish --config always",
     "pree2e": "vite build --mode=test"
   },
   "dependencies": {
